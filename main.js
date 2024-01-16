@@ -3,4 +3,4 @@ function greet(name) {
   return `Hello, ${name}`
 }
 
-console.log(greet("World!11"))
+console.log(greet("OTUS"))
