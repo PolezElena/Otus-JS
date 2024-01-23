@@ -2,8 +2,11 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
+    "jest/globals": true,
   },
-  extends: ["standard", "prettier"],
+  plugins: ["jest"],
+  extends: ["standard", "plugin:jest/recommended", "prettier"],
   overrides: [
     {
       env: {
