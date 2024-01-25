@@ -1,53 +1,54 @@
-import {kolobok, newYear} from '../src/app.js'
+import {watch, energy} from '../src/app.js'
 
-describe ('kolobok function', () => 
+describe ('watch function', () => 
  {
-  it('возврощает Дедушка', () => 
+  it('Говорят Часы стоят', () => 
   {
-    const result = kolobok ('Дедушка')
-    expect(result).toBe('Я от дедушки ушел!')
+    const result = watch ('Говорят')
+    expect(result).toBe('Часы стоят')
   })
 
-  it('возврощает Заяц', () =>
+  it('Говорят Часы спешат', () =>
    {
-    const result = kolobok ('Заяц')
-    expect(result).toBe('Я от зайца ушел!')
+    const result = watch ('Говорят1')
+    expect(result).toBe('Часы спешат')
   })
 
-  it('возврощает Лиса', () => 
+  it('Говорят Часы идут', () => 
   {
-    const result = kolobok ('Лиса')
-    expect(result).toBe('Меня съели!')
+    const result = watch ('Говорят2')
+    expect(result).toBe('Часы идут')
   })
 
-  it('возврощает неизвестный', () => 
+  it('Но немножко отстают', () => 
   {
     expect(() => {
-      kolobok('неизвестный')
-    }).toThrow('Я встретил кого-то неизвестного')
+      watch('неизвестное')
+    }).toThrow('Но немножко отстают')
     })
   } 
 )
     
 
-describe('newYear function', () => 
+describe('energy function', () => 
  {
-  it('возврощает Дед Мороз', () => 
+  it('Твои ошибки-твоя сила', () => 
   {
-    const result = newYear('Дед Мороз')
-    expect(result).toBe('Дед Мороз! Дед Мороз! Дед Мороз!')
+    const result = energy('Твои ошибки-твоя сила')
+    expect(result).toBe('Твои ошибки-твоя сила! Твои ошибки-твоя сила! Твои ошибки-твоя сила!')
+  
   })
 
-  it('возврощает Снегурка', () => 
+  it('Улыбайтесь', () => 
   {
-    const result = newYear('Снегурка')
-    expect(result).toBe('Снегурка! Снегурка! Снегурка!')
+    const result = energy('Улыбайтесь')
+    expect(result).toBe('Улыбайтесь! Улыбайтесь! Улыбайтесь!')
   })
 
   it('should return a default response for unknown неизвестный', () => 
   {
     expect(() => {
-      newYear('неизвестный')
+       energy('неизвестный')
     }).toThrow('Неизвестный герой')
   })
  } 

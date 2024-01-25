@@ -1,22 +1,22 @@
-export function kolobok(name)
+export function watch(name)
 {
  switch (name) {
- case 'Дедушка':
- return `Я от дедушки ушел!`
- case 'Заяц':
- return `Я от зайца ушел!`
- case 'Лиса':
- return `Меня съели!`
+ case 'Говорят':
+ return `Часы стоят`
+ case 'Говорят1':
+ return `Часы спешат`
+ case 'Говорят2':
+ return `Часы идут`
  default:
-   throw new Error('Я встретил кого-то неизвестного')
+   throw new Error('Но немножко отстают')
 }
 }
 
-export function newYear(name)
+export function energy(name)
 {
 switch (name) {
- case 'Дед Мороз':
- case 'Снегурка':
+ case 'Твои ошибки-твоя сила':
+ case 'Улыбайтесь':
    return name+ '! ' + name + '! ' +  name+ '!'
  default:
      throw new Error('Неизвестный герой')
