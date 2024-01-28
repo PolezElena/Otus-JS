@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node test/app.spec.js",
+    "start": "babel-node test/disc.js",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "lint": "eslint .",
