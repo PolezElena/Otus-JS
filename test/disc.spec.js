@@ -6,8 +6,8 @@ import { calculateTotal } from '../src/discount.js'
     {
       name: 'case 1: invalid negative discount',
       products: [
-        { name: 'Товар1', quantity: 10, price: 1 },
-        { name: 'Товар2', quantity: 5, price: 3 },
+        { name: 'product1', quantity: 10, price: 1 },
+        { name: 'product2', quantity: 5, price: 3 },
       ],
       discount: -10,
       expectedError: 'Скидка не может быть отрицательным числом.',
@@ -15,8 +15,8 @@ import { calculateTotal } from '../src/discount.js'
     {
       name: 'case 2: invalid discount over 100%',
       products: [
-        { name: 'Товар1', quantity: 3, price: 1 },
-        { name: 'Товар2', quantity: 5, price: 3 },
+        { name: 'product1', quantity: 3, price: 1 },
+        { name: 'product2', quantity: 5, price: 3 },
       ],
       discount: 120,
       expectedError: 'Скидка не может быть больше 100%.',
