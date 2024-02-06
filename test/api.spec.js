@@ -17,8 +17,8 @@ async function createUser(userName,password)
      method: 'post',
      body: JSON.stringify 
       ({
-       "userName": userName,
-       "password": password,
+       userName: userName,
+       password: password,
        
       }),
     headers: {'Content-Type': 'application/json'} 
@@ -34,8 +34,8 @@ async function generateToken(userName,password)
      method: 'post',
      body: JSON.stringify 
       ({
-       "userName": userName,
-       "password": password,
+       userName: userName,
+       password: password,
        
       }),
     headers: {'Content-Type': 'application/json'} 
