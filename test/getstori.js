@@ -15,3 +15,40 @@
 // Задание 2 (не обязательное):
 // Напишите документацию к функции используя язык разметки JSDOC.
 // Для проверки (ревью) домашнего задания присылайте в чат ссылку на pull request
+
+/**
+ * 
+ * @param {string} scores показывает какое значение будет
+ * @returns {number} выводит значение
+ */
+ function getScore(scores) {
+  let totalScore = 0;
+  for (let key in scores) {
+    totalScore += scores[key];
+  }
+  return totalScore;
+}
+const scores = {
+  Anna: 10,
+  Olga: 1,
+  Ivan: 5,
+};
+console.log(getScore(scores)); // Output: 16
+
+/**
+ * 
+ * @param {string} scores показывает значение
+ * @returns {number} недопустимый вывод
+ */
+function getScore1(scores) {
+  if (!scores || Object.keys(scores).length === 0) {
+    return 'Invalid input';
+  }
+
+  let totalScore = 0;
+  for (let key in scores) {
+    totalScore += scores[key];
+  }
+  return totalScore;
+}
+console.log(getScore1()); // Output: 'Invalid input'
