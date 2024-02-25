@@ -3,3 +3,6 @@ reports
 build
 .env
 coverage
+.idea
+allure-report
+allure-results
